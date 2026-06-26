@@ -27,7 +27,7 @@ A simple weather application built with Node.js, Express.js, Handlebars, Mapbox 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/Weather.git
+git clone [https://github.com/YourUsername/Weather.git](https://github.com/ManarHisham2002/Weather-node-)
 ```
 
 Move to the project folder:
