@@ -1,0 +1,110 @@
+body {
+    background-image: url("./img/background2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+.container form {
+    width: 30%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container form .search-feild {
+    background-color: whitesmoke;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 30px;
+    padding: 5px 10px;
+}
+.container form .search-feild input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.container form .search-feild input:focus {
+    outline: none;
+}
+.container form .search-feild button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 22px;
+    color: rgb(42, 42, 186);
+}
+.container form .search-feild button:focus {
+    outline: none;
+}
+.container .output {
+    width: 70%;
+}
+.container .output .cards{
+    padding: 0 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.container .output .card {
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container .output .card .title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container .output .card .title img{
+    width: 35px;
+    height: 35px;
+}
+.container .output .card .title h2 {
+    color: white;
+    text-transform: capitalize;
+}
+.container .output .card p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.hidden {
+    display: none !important;
+}
+.not-Found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.not-Found a {
+    text-decoration: none;
+    color:  white;
+    font-size: 40px;
+}
+.not-Found a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}

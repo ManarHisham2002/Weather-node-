@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png" />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="form">
+        <div class="search-feild">
+          <input type="text" placeholder="Country....." id="address" />
+          <button>Search</button>
+        </div>
+      </form>
+      <div class="output">
+        <div class="cards hidden" id="cards">
+          <div class="card">
+            <div class="title">
+              <img src="/img/pin.png" alt="" />
+              <h2>Location</h2>
+            </div>
+            <p id="location"></p>
+          </div>
+          <div class="card">
+            <div class="title">
+              <img src="/img/cloudy.png" alt="" />
+              <h2>condition</h2>
+            </div>
+            <p id="condition"></p>
+          </div>
+          <div class="card">
+            <div class="title">
+              <img src="/img/thermometer.png" alt="" />
+              <h2>temperature</h2>
+            </div>
+            <p id="temperature"></p>
+          </div>
+        </div>
+        <div class="error hidden" id="errorContainer">
+          <div class="card">
+            <div class="title">
+              <img src="/img/warning.png" alt="" />
+              <h2>Error</h2>
+            </div>
+            <p id="error"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
