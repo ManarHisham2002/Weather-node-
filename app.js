@@ -5,6 +5,11 @@ const path = require("path");
 app.set("view engine", "hbs");
 const publicDirectory = path.join(__dirname, "public");
 app.use(express.static(publicDirectory));
+
+// Add Another InterFace, If you Want Last (old) InterFace can comment line 10 & 11
+const viewsPath = path.join(__dirname, "viewsNew");
+app.set("views", viewsPath);
+
 const geocode = require("./data/geo");
 const forecast = require("./data/forecast");
 app.get("/", (req, res) => {
